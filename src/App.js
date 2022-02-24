@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import FunctionBox from './Button2';
+import ClassBox from './Button1';
+import './Style.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <>
+          <div className="continer">
+            <div className="header">
+              <h1 className="title">Styling using Functional and Class Component</h1>
+            </div>
+            <div className="box-continer">
+                <FunctionBox /> 
+                <ClassBox />
+            </div>
+          </div>
+        </>
+    )
 }
-
 export default App;
